@@ -18,7 +18,7 @@ const app = express();
 //middleware
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "https://gayathiripizzafe.netlify.app" }));
 
 //route
 app.use("/api/pizzas", require("./routes/pizzaRoutes"));
